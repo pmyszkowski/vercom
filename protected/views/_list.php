@@ -1,3 +1,5 @@
+<?php $users = $db->fetchUsers(); ?>
+
 <?php foreach ($users as $user): ?>
     <p>Witaj <?php echo $user['imie'].' ('.$user['test'].')' ?> ,</p>
 
