@@ -1,0 +1,9 @@
+#container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+form  { display: table;      }
+p     { display: table-row; }
+label { display: table-cell; }
+input { display: table-cell; }

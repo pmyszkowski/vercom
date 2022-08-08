@@ -1,3 +1,5 @@
 <?php
 
-echo "Hello World!";
+require_once('../protected/db/connect.php');
+
+header("location: ./actions/input.php");
