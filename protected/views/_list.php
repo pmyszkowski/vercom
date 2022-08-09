@@ -1,3 +1,5 @@
+<?php /* @var DbConnection $db */ ?>
+
 <?php $users = $db->fetchUsers(); ?>
 
 <?php foreach ($users as $user): ?>

@@ -26,6 +26,8 @@ class DbConnection
     }
 
     public function insertUsers(array $users) {
+        $imie = null;
+        $test = null;
 
         $stmt = $this
             ->getConnection()

@@ -32,14 +32,17 @@ function getUsers() : array
 
         $decoded = json_decode($_POST['json']);
 
-        foreach ($decoded as $user) {
+        if( is_array($decoded) ) {
 
-            if( ( !empty($user->imie) && !empty($user->test) ) ) {
+            foreach ($decoded as $user) {
 
-                $users[] = array(
-                    'imie' => $user->imie,
-                    'test' => $user->test,
-                );
+                if( ( !empty($user->imie) && !empty($user->test) ) ) {
+
+                    $users[] = array(
+                        'imie' => $user->imie,
+                        'test' => $user->test,
+                    );
+                }
             }
         }
     }
